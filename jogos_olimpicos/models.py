@@ -1,6 +1,6 @@
 from django.db import models
 
-class atleta(models.Model):
+class Atleta(models.Model):
     SEX = (('F', 'feminino'), ('M', 'masculino'))
     id = models.IntegerField(unique=True, primary_key=True)
     name = models.CharField(max_length=255)
@@ -12,7 +12,7 @@ class atleta(models.Model):
     def __str__(self):
         return self.name
 
-class evento(models.Model):
+class Evento(models.Model):
     MEDAL = (('Gold', 'Gold'), ('Silver', 'Silver'), ('Bronze', 'Bronze'))
     age = models.IntegerField(null=True, blank=True)
     height = models.FloatField(null=True, blank=True)
