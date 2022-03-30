@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Atleta(models.Model):
     SEX = (('F', 'feminino'), ('M', 'masculino'))
     id = models.IntegerField(unique=True, primary_key=True)
@@ -14,6 +15,7 @@ class Atleta(models.Model):
 
 class Evento(models.Model):
     MEDAL = (('Gold', 'Gold'), ('Silver', 'Silver'), ('Bronze', 'Bronze'))
+    atleta = models.ForeignKey(Atleta, on_delete=models.CASCADE)
     age = models.IntegerField(null=True, blank=True)
     height = models.FloatField(null=True, blank=True)
     weight = models.FloatField(null=True, blank=True)

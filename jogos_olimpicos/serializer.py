@@ -5,3 +5,9 @@ class AtletaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Atleta
         fields = '__all__'
+
+class EventoSerializer(serializers.ModelSerializer):
+    atleta = AtletaSerializer()
+    class Meta:
+        model = Evento
+        fields = '__all__'
