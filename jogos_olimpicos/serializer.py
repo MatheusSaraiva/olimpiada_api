@@ -10,4 +10,4 @@ class EventoSerializer(serializers.ModelSerializer):
     atleta = AtletaSerializer()
     class Meta:
         model = Evento
-        fields = '__all__'
+        fields = ['atleta', 'age', 'height', 'weight', 'games', 'year', 'season', 'city', 'event', 'medal']

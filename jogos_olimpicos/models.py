@@ -15,13 +15,14 @@ class Atleta(models.Model):
 
 class Evento(models.Model):
     MEDAL = (('Gold', 'Gold'), ('Silver', 'Silver'), ('Bronze', 'Bronze'))
+    SEASON = (('Summer', 'Summer'), ('Winter', 'Winter'))
     atleta = models.ForeignKey(Atleta, on_delete=models.CASCADE)
     age = models.IntegerField(null=True, blank=True)
     height = models.FloatField(null=True, blank=True)
     weight = models.FloatField(null=True, blank=True)
     games = models.CharField(max_length=255, null=True, blank=True)
     year = models.IntegerField(null=True, blank=True)
-    season = models.CharField(max_length=255, null=True, blank=True)
+    season = models.CharField(max_length=6, choices=SEASON, null=True, blank=True)
     city = models.CharField(max_length=255, null=True, blank=True)
     event = models.CharField(max_length=255, null=True, blank=True)
     medal = models.CharField(max_length=6, choices=MEDAL, null=True, blank=True)
