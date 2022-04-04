@@ -44,10 +44,10 @@ https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-result
 # Execultar o script para popular no banco de dados
 $ python popular_db.py
 ```
-### Hospedar a API no servidor Heroku
+### Hospegem da API no servidor Heroku
 https://olimpiada-api.herokuapp.com/swagger/
 
-### Hospedar a API no servidor Heroku com a documentação swagger
+### Hospegem da API no servidor Heroku com a documentação swagger
 https://olimpiada-api.herokuapp.com/
 
 
