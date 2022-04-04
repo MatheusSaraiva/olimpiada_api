@@ -31,7 +31,7 @@ $ python manage.py runserver
 # abrir o projeto
 http://127.0.0.1:8000/
 ou 
-para ter uma documentação mais organizada
+para usar documentação swagger
 http://127.0.0.1:8000/swagger/ 
 
 ```
@@ -44,8 +44,10 @@ https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-result
 # Execultar o script para popular no banco de dados
 $ python popular_db.py
 ```
-## Hospedar a API no servidor Heroku
+### Hospedar a API no servidor Heroku
 https://olimpiada-api.herokuapp.com/swagger/
+
+### Hospedar a API no servidor Heroku com a documentação swagger
 https://olimpiada-api.herokuapp.com/
 
 
