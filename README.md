@@ -45,6 +45,7 @@ https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-result
 $ python popular_db.py
 ```
 ## Hospedar a API no servidor Heroku
+https://olimpiada-api.herokuapp.com/swagger/
 https://olimpiada-api.herokuapp.com/
 
 
