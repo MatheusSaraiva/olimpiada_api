@@ -47,10 +47,6 @@ $ python popular_db.py
 ### Hospegem da API no servidor Heroku
 https://olimpiada-api.herokuapp.com/swagger/
 
-### Hospegem da API no servidor Heroku com a documentação swagger
-https://olimpiada-api.herokuapp.com/
-
-
 
 # Autor
 
